@@ -1,7 +1,11 @@
 #Esqueleto para la práctica de Mastermind
+
 ##index.html
+
 Fichero con la explicación del juego
+
 ##Estilos
+
 Fichero **css** ubicado en **./estilo**
 Opcionalmente se puede usar este fichero, que es el usado en el ejemplo de la práctica
 ##jugar.php
