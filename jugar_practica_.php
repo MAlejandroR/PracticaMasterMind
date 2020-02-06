@@ -45,12 +45,10 @@ if (isset($_POST['jugar'])) {
 
 
 
-//Mostramlos la información, el formulariio de jugar (id jugadas)
+//Obtenemos  la información, el formulariio de jugar (id jugadas)
 //y las opciones
-echo "<div id = informacion>$msj</div>";
-$formulario = mostrar_formulario_jugada(COLORES);
-echo "<fieldset id = jugadas><legend>Realizar Jugada</legend>$formulario 
-                   </fieldset>";
+ $formulario = mostrar_formulario_jugada(COLORES);
+
 ?>
 
 <!doctype html>
@@ -77,6 +75,10 @@ echo "<fieldset id = jugadas><legend>Realizar Jugada</legend>$formulario
                     <input type='submit' name='clave' value='<?php echo $opcion_clave ?>' />
                 </form>
             </fieldset>
+            <div id = informacion>$msj</div>";
+             <fieldset id = jugadas><legend>Realizar Jugada</legend>
+                 <?= $formulario ?>
+             </fieldset>";
 
         </body>
     </html>
